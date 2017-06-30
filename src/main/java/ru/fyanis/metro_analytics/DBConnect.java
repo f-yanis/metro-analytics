@@ -7,14 +7,14 @@ import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class DBConect {
+public class DBConnect {
     private final String URL;
     private final String USERNAME;
     private final String PASSWORD;
 
     Connection connection;
 
-    public DBConect(String URL, String USERNAME, String PASSWORD) {
+    public DBConnect(String URL, String USERNAME, String PASSWORD) {
         this.URL = URL;
         this.USERNAME = USERNAME;
         this.PASSWORD = PASSWORD;
