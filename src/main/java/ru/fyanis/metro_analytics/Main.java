@@ -40,6 +40,9 @@ public class Main {
         }
     }
 
+    /**Метод получаес из БД и выводит в консоль популярные типы проездных в заданный период времени
+     * @param TIPES_TICKETS_PERIOD
+     */
     public static void showTipesTicketsPeriod(final String TIPES_TICKETS_PERIOD) {
 
         try (Connection connection = DB_CONECT.getConnection();
@@ -62,6 +65,10 @@ public class Main {
         }
     }
 
+    /**Метод получаес из БД и выводит в консоль анализ популярности станций (рейтинг по загруженности)
+     * за заданный период времени
+     * @param METRO_RATE_PERIOD
+     */
     public static void showMetroRatePeriod(final String METRO_RATE_PERIOD) {
 
         try (Connection connection = DB_CONECT.getConnection();
@@ -84,6 +91,9 @@ public class Main {
         }
     }
 
+    /**Метод получаес из БД и выводит в консоль список активных билетов с оставшимся количеством поездок
+     * @param TICKETS
+     */
     public static void showTickets(final String TICKETS) {
 
         try (Connection connection = DB_CONECT.getConnection();
@@ -106,6 +116,9 @@ public class Main {
         }
     }
 
+    /**Метод получаес из БД и выводит в консоль анализ загрузки метрополитена с учётом часов-пик
+     * @param METRO_ANALYTIC_TIME
+     */
     public static void showMetroAnalyticTime(final String METRO_ANALYTIC_TIME) {
         DBConect dbConect = new DBConect(URL, USERNAME, PASSWORD);
 
